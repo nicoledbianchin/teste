@@ -33,7 +33,7 @@ para o funcionamento do projeto:
 ### Garanta acesso ao banco de dados
 
 Antes de executar o backend, garanta que o Postgres esteja rodando na máquina e que exista um banco de dados 
-chamado `template_aceleradora`. Localmente, o backend tentará se conectar ao banco usando usuário `postgres` e senha 
+chamado `atendo`. Localmente, o backend tentará se conectar ao banco usando usuário `postgres` e senha 
 `123456`. Talvez seja necessário alterar a senha do usuáro `postgres` para que projeto possa executar corretamente
 
 Para isso, execute:
@@ -58,25 +58,3 @@ Em um terminal, execute o comando:
 
 Este comando iniciará a execução do backend do projeto. Perceba que ele continuará executando até ser parado manualmente,
 O que pode ser feito pressionando as teclas <kbd>ctrl</kbd> + <kbd>c</kbd>.
-
-### Inicie o frontend
-
-Abra uma nova janela de terminal, já que o backend estará bloqueando a primeira janela.
-
-É necessário executar `yarn install` caso seja a primeira vez que você esteja executando o projeto no computador, ou quando uma nova
-biblioteca for adicionada ao projeto (`yarn add`):
-
-```shell
-cd frontend
-yarn install
-```
-
-Com as dependências instaladas, execute o comando:
-
-```shell script
-# Voce precisa estar dentro da pasta frontend
-yarn start;
-```
-
-Assim como o backend, este comando seguirá executando até ser parado manualmente. Ele também atualizará o front-end a 
-cada mudança feita no código, portanto, não é necessário executá-lo novamente para ver as mudanças aplicadas.
